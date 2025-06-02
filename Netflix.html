@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NETFLIX</title>
+    <link rel="stylesheet" href="CSS/navigation_bar.css">
+    <link rel="stylesheet" href="CSS/hero_section.css">
+    <link rel="stylesheet" href="CSS/trending.css">
+    <link rel="stylesheet" href="CSS/shows.css">
+    <link rel="stylesheet" href="CSS/reviews.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  </head>
+  <body>
+    <header>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <a href="#home"><img class="Netflix" src="image/Netflix1.png" alt="NETFLIX" /></a>
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle Navigation"/>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="navbar__links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#trending">Trending Movies</a></li>
+        <li><a href="#shows">Popular Shows</a></li>
+        <li><a href="#reviews">User Reviews</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+    </header>
+
+  <section class="hero-section" id="home">
+  <div class="hero-content">
+    <h1 class="hero-title">CineVerse</h1>
+    <p class="hero-subtitle">Your Gateway to Infinite Stories</p>
+    <button class="hero-btn" onclick="location.href='#trending'">See Trending Movies</button>
+  </div>
+  <div class="hero-image">
+    <!-- Animated SVG (Bonus) -->
+    <svg width="260" height="260" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg" class="popcorn-svg">
+      <ellipse cx="130" cy="200" rx="80" ry="30" fill="#FFD600" opacity="0.2"/>
+      <rect x="80" y="80" width="100" height="120" rx="20" fill="#fff" stroke="#E53935" stroke-width="6"/>
+      <rect x="100" y="120" width="20" height="60" rx="8" fill="#E53935"/>
+      <rect x="140" y="120" width="20" height="60" rx="8" fill="#E53935"/>
+      <ellipse class="popcorn" cx="130" cy="80" rx="40" ry="30" fill="#FFD600"/>
+      <ellipse class="popcorn" cx="110" cy="70" rx="18" ry="12" fill="#FFF176"/>
+      <ellipse class="popcorn" cx="150" cy="68" rx="16" ry="10" fill="#FFF176"/>
+    </svg>
+  </div>
+</section>
+
+<section class="trending-movies" id="trending">
+  <div class="trending-header">
+    <h2 class="trending-title">Trending Movies</h2>
+    <p class="trending-subtitle">The hottest picks, handpicked for your next movie night!</p>
+  </div>
+  <div class="movie-cards">
+    <!-- Card 1 -->
+    <div class="movie-card">
+      <img src="image/inception.jpg" alt="Inception" class="movie-img">
+      <div class="movie-info">
+        <h3>Inception</h3>
+        <p>A mind-bending thriller where dreams are the ultimate heist.</p>
+      </div>
+      <span class="duration">2h 28m</span>
+      <a href="https://www.netflix.com/title/70131314" target="_blank" class="watch-now">Watch Now</a>
+      <input type="checkbox" id="watchlist1" class="watchlist-toggle">
+      <label for="watchlist1" class="watchlist-btn" title="Add to Watchlist"></label>
+    </div>
+    <!-- Card 2 -->
+    <div class="movie-card">
+      <img src="image/batman.jpg" alt="The Dark Knight" class="movie-img">
+      <div class="movie-info">
+        <h3>The Dark Knight</h3>
+        <p>Batman faces his greatest psychological and physical tests against the Joker.</p>
+      </div>
+      <span class="duration">2h 32m</span>
+      <a href="https://www.primevideo.com/detail/0M2Q9Z5RZQF6V1P0S5QZJ5Q5ZP" target="_blank" class="watch-now">Watch Now</a>
+      <input type="checkbox" id="watchlist2" class="watchlist-toggle">
+      <label for="watchlist2" class="watchlist-btn" title="Add to Watchlist"></label>
+    </div>
+    <!-- Card 3 -->
+    <div class="movie-card">
+      <img src="image/in.jpg" alt="Interstellar" class="movie-img">
+      <div class="movie-info">
+        <h3>Interstellar</h3>
+        <p>A team of explorers travel through a wormhole in space in an attempt to save humanity.</p>
+      </div>
+      <span class="duration">2h 49m</span>
+      <a href="https://www.netflix.com/title/70305903" target="_blank" class="watch-now">Watch Now</a>
+      <input type="checkbox" id="watchlist3" class="watchlist-toggle">
+      <label for="watchlist3" class="watchlist-btn" title="Add to Watchlist"></label>
+    </div>
+    <!-- Card 4 -->
+    <div class="movie-card">
+      <img src="image/endgame.jpg" alt="Avengers: Endgame" class="movie-img">
+      <div class="movie-info">
+        <h3>Avengers: Endgame</h3>
+        <p>The Avengers assemble once more to reverse Thanos' actions and restore balance.</p>
+      </div>
+      <span class="duration">3h 2m</span>
+      <a href="https://www.hotstar.com/in/movies/avengers-endgame/1260013556" target="_blank" class="watch-now">Watch Now</a>
+      <input type="checkbox" id="watchlist4" class="watchlist-toggle">
+      <label for="watchlist4" class="watchlist-btn" title="Add to Watchlist"></label>
+    </div>
+  </div>
+</section>
+
+
+<section class="popular-shows" id="shows">
+  <div class="shows-header">
+    <h2 class="shows-title">Popular Shows</h2>
+    <p class="shows-subtitle">Binge-worthy series that everyone’s talking about. Explore your next obsession!</p>
+  </div>
+  <div class="show-cards">
+
+    <!-- Money Heist -->
+    <div class="show-card">
+      <img src="image/Money Heist.webp" alt="Money Heist" class="show-img">
+      <div class="show-info">
+        <h3>Money Heist</h3>
+        <span class="show-genre">Crime, Thriller</span>
+        <span class="show-meta">5 Seasons • 41 Episodes</span>
+        <p class="show-synopsis">A criminal mastermind plans the biggest heist in history, recruiting eight skilled thieves to carry it out.</p>
+      </div>
+      <!-- Modal trigger and modal (must be in this order!) -->
+      <input type="checkbox" id="modal-moneyheist" class="modal-toggle" />
+      <label for="modal-moneyheist" class="learn-more-btn">Learn More</label>
+      <div class="modal">
+        <label for="modal-moneyheist" class="modal-overlay"></label>
+        <div class="modal-content">
+          <h3>Money Heist</h3>
+          <p><strong>Genre:</strong> Crime, Thriller</p>
+          <p><strong>Seasons:</strong> 5</p>
+          <p><strong>Episodes:</strong> 41</p>
+          <p><strong>Synopsis:</strong> Led by the enigmatic Professor, a group of robbers undertake an ambitious plan to print billions of euros inside Spain's Royal Mint, facing unexpected challenges and emotional twists at every turn.</p>
+          <a href="https://www.netflix.com/title/80192098" target="_blank" class="modal-watch-btn">Watch Now</a>
+          <label for="modal-moneyheist" class="modal-close">&times;</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stranger Things -->
+    <div class="show-card">
+      <img src="image/st.jpg" alt="Stranger Things" class="show-img">
+      <div class="show-info">
+        <h3>Stranger Things</h3>
+        <span class="show-genre">Drama, Fantasy, Horror</span>
+        <span class="show-meta">4 Seasons • 34 Episodes</span>
+        <p class="show-synopsis">A group of kids in a small town uncover supernatural mysteries and secret experiments after a boy disappears.</p>
+      </div>
+      <input type="checkbox" id="modal-stranger" class="modal-toggle" />
+      <label for="modal-stranger" class="learn-more-btn">Learn More</label>
+      <div class="modal">
+        <label for="modal-stranger" class="modal-overlay"></label>
+        <div class="modal-content">
+          <h3>Stranger Things</h3>
+          <p><strong>Genre:</strong> Drama, Fantasy, Horror</p>
+          <p><strong>Seasons:</strong> 4</p>
+          <p><strong>Episodes:</strong> 34</p>
+          <p><strong>Synopsis:</strong> When a young boy vanishes, his friends, family, and a mysterious girl with supernatural powers confront terrifying forces from another dimension to get him back.</p>
+          <a href="https://www.netflix.com/title/80057281" target="_blank" class="modal-watch-btn">Watch Now</a>
+          <label for="modal-stranger" class="modal-close">&times;</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Good Doctor -->
+    <div class="show-card">
+      <img src="image/the-good-doctor-season.webp" alt="The Good Doctor" class="show-img">
+      <div class="show-info">
+        <h3>The Good Doctor</h3>
+        <span class="show-genre">Drama, Medical</span>
+        <span class="show-meta">7 Seasons • 116 Episodes</span>
+        <p class="show-synopsis">Shaun Murphy, a young surgeon with autism and savant syndrome, joins a prestigious hospital’s surgical unit.</p>
+      </div>
+      <input type="checkbox" id="modal-gooddoctor" class="modal-toggle" />
+      <label for="modal-gooddoctor" class="learn-more-btn">Learn More</label>
+      <div class="modal">
+        <label for="modal-gooddoctor" class="modal-overlay"></label>
+        <div class="modal-content">
+          <h3>The Good Doctor</h3>
+          <p><strong>Genre:</strong> Drama, Medical</p>
+          <p><strong>Seasons:</strong> 7</p>
+          <p><strong>Episodes:</strong> 116</p>
+          <p><strong>Synopsis:</strong> Shaun Murphy, a brilliant doctor with autism and savant syndrome, faces unique challenges and prejudices as he saves lives and proves his worth in the surgical unit.</p>
+          <a href="https://www.sonyliv.com/shows/the-good-doctor-1700000183" target="_blank" class="modal-watch-btn">Watch Now</a>
+          <label for="modal-gooddoctor" class="modal-close">&times;</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Suits -->
+    <div class="show-card">
+      <img src="image/suits.jpg" alt="Suits" class="show-img">
+      <div class="show-info">
+        <h3>Suits</h3>
+        <span class="show-genre">Drama, Legal</span>
+        <span class="show-meta">9 Seasons • 134 Episodes</span>
+        <p class="show-synopsis">A brilliant college dropout talks his way into a job at a prestigious law firm, despite lacking a law degree.</p>
+      </div>
+      <input type="checkbox" id="modal-suits" class="modal-toggle" />
+      <label for="modal-suits" class="learn-more-btn">Learn More</label>
+      <div class="modal">
+        <label for="modal-suits" class="modal-overlay"></label>
+        <div class="modal-content">
+          <h3>Suits</h3>
+          <p><strong>Genre:</strong> Drama, Legal</p>
+          <p><strong>Seasons:</strong> 9</p>
+          <p><strong>Episodes:</strong> 134</p>
+          <p><strong>Synopsis:</strong> Mike Ross, a genius with a photographic memory, impresses a top lawyer and lands a job at a high-powered New York law firm, hiding his lack of a law degree as they tackle high-stakes cases.</p>
+          <a href="https://www.netflix.com/title/70195800" target="_blank" class="modal-watch-btn">Watch Now</a>
+          <label for="modal-suits" class="modal-close">&times;</label>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="user-reviews" id="reviews">
+  <div class="reviews-header">
+    <h2 class="reviews-title">User Reviews</h2>
+    <p class="reviews-subtitle">Hear what our viewers have to say and share your own experience!</p>
+  </div>
+  <div class="reviews-flex">
+    <!-- Part 1: Review Cards -->
+    <div class="reviews-cards">
+      <div class="review-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Doe" class="review-img">
+        <div class="review-info">
+          <h3>John Doe</h3>
+          <p class="review-text">Absolutely loved the collection! The trending movies section always keeps me updated with the latest blockbusters.</p>
+        </div>
+      </div>
+      <div class="review-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Sharma" class="review-img">
+        <div class="review-info">
+          <h3>Priya Sharma</h3>
+          <p class="review-text">The interface is so smooth and easy to use. I especially enjoy the curated popular shows—great recommendations!</p>
+        </div>
+      </div>
+      <div class="review-card">
+        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Alex Kim" class="review-img">
+        <div class="review-info">
+          <h3>Alex Kim</h3>
+          <p class="review-text">Submitting my own review was seamless. Excited to see more features in the future!</p>
+        </div>
+      </div>
+    </div>
+    <!-- Part 2: Review Form -->
+    <form class="review-form">
+      <h3>Submit Your Review</h3>
+      <div class="form-group">
+        <label for="review-name">Name</label>
+        <input type="text" id="review-name" name="review-name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <label for="review-email">Email</label>
+        <input type="email" id="review-email" name="review-email" placeholder="you@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="review-message">Your Review</label>
+        <textarea id="review-message" name="review-message" rows="4" placeholder="Share your thoughts..." required></textarea>
+      </div>
+      <button type="submit" class="form-submit-btn">Submit Review</button>
+    </form>
+  </div>
+</section>
+
+<!-- Add this at the end of your <body> -->
+<footer class="site-footer" id="footer">
+  <div class="footer-container">
+    <div class="footer-social">
+      <a href="https://www.facebook.com/netflix/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://x.com/netflix?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/netflix_in/?hl=en" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCWOA1ZGywLbqmigxE4Qlvuw" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.termsfeed.com/live/terms-and-conditions-example" target="_blank">Terms &amp; Conditions</a>
+      <span>|</span>
+      <a href="https://www.termsfeed.com/live/privacy-policy-example" target="_blank">Privacy Policy</a>
+    </div>
+    <div class="footer-copy">
+      &copy; 2025 CineVerse. All rights reserved.
+    </div>
+  </div>
+  <a href="#" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+</footer>
+
+
+  </body>
+</html>
