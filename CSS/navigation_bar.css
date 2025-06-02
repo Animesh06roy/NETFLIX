@@ -1,0 +1,128 @@
+html {
+  scroll-behavior: smooth; /*smooth scrolling */
+}
+
+body {
+  margin: 0;
+  background: #181a20;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  padding-top: 64px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #000000, #00000000);
+  padding: 0 2rem;
+  height: 64px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.navbar__logo img {
+  height: 40px;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.2s;
+  padding: 8px 0;
+}                           
+
+/* Creative hover effect [4] */
+.navbar__links li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #4CAF50;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.navbar__links li a:hover,
+.navbar__links li a:focus {
+  color: #4CAF50;
+}
+.navbar__links li a:hover::after,
+.navbar__links li a:focus::after {
+  width: 100%;
+}
+
+/* Hamburger menu styles [5] */
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  height: 32px;
+  justify-content: center;
+  gap: 6px;
+}
+
+.nav-toggle-label span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar__links {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: #222;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+    pointer-events: none;
+  }
+  .nav-toggle:checked ~ .navbar__links {
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  .nav-toggle-label {
+    display: flex;
+  }
+}
+
+/* Hamburger animation */
+.nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
